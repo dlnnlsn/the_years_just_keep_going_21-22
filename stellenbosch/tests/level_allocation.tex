@@ -4,6 +4,7 @@
 \usepackage{enumerate}
 \usepackage{fullpage}
 \usepackage{fancyvrb}
+\DeclareMathOperator{\lcm}{lcm}
 
 \newcommand{\answers}[5]{
     \newline
@@ -95,6 +96,7 @@ Let $A = \{2, 3, 5, 7\}$ and $B = \{3, 4, 5, 6 \}$, what is $|A \cap B|$?
 Given a set of all of the squares on an $8 \times 8$ chessboard (each square is assumed to be unique), how many subsets do not contain any white squares?
 \answers{$0$}{$32$}{$2^{32}$}{$32!$}{$2^{64}$}
 
+
 \item % Ralph, correct answer: \mathbb{R}
 SAMF offers Liam five payment options (A-E) for his work at the camp.
 These will all be in the form of a bag full of R1 coins.
@@ -136,7 +138,7 @@ Which of the following could be the number he has on the board after $2020$ minu
 \begin{enumerate}[1.]
 
 \item % Ralph, correct answer 90^\circ 
-Let $\triangle ABC$ and $\triangle ABD$ be two isosceles triangle with $C$, $B$, and $D$ collinear.
+Let $\triangle ABC$ and $\triangle ABD$ be two isosceles triangle with $C$, $B$, and $D$ collinear and $C \ne D$.
 What is the value of $\angle CAD$?
 \answers{$72^\circ$}{$90^\circ$}{$108^\circ$}{$135^\circ$}{Impossible}
 
@@ -148,10 +150,23 @@ What fraction of the square's area is $\triangle BPM$?
 \answers{ $\frac{1}{8}$ }{ $\frac{1}{100}$ }{ $\frac{1}{24}$ }{ $\frac{1}{10}$ }{ $\frac{1}{20}$ }
 
 
-\item % 
+\item % Ralph, correct answer 2
+Consider the following statements:
+\begin{itemize}
+    \item In non-degenerate triangle $ABC$, it is guaranteed that $|AB| > |BC| + |CA|$.
+    \item The incenter, centroid, and circumcenter of a triangle are collinear.
+    \item It is possible to divide an arbitrary angle into three equal parts using only a ruler and compass.
+    \item In quadrilateral $ABCD$, it is always true that $|AB| \cdot |CD| + |AD| \cdot |BC| \ge |AC| \cdot |BD|$.
+    \item It is possible to inscribe a circle inside any non-degenerate triangle, and the center of this circle is the intersection of perpendicular bisectors of the sides of the triangle.
+\end{itemize}
+How many of these are correct?
+\answers{$1$}{$2$}{$3$}{$4$}{$5$}
 
-
-\item % 
+\item % Ralph, correct answer 3
+In triangle $ABC$, let $H$ be the orthocenter.
+Let $A'$, $B'$, and $C'$ be the reflections of $H$ over lines $BC$, $CA$, and $AB$ respectively.
+How many cyclic quadrilaterals are there that use only the points $A$, $B$, $C$, $H$, $A'$, $B'$, $C'$?
+\answers{15}{35}{0}{3}{6}
 
 
 \item % Ralph, correct answer \frac{11}{10}
@@ -192,15 +207,25 @@ What is the largest positive integer that cannot be written as the sum of non-ne
 How many natural numbers below $1001$ are relatively prime to $1001$?
 \answers{$168$}{$720$}{$852$}{$900$}{$1000$}
 
-\item % 
-
+\item % Ralph, correct answer 1
+Consider the following statements:
+\begin{itemize}
+    \item Every number can be written as the sum of two squares.
+    \item If $a \; | \; b$ and $a \; | \; c$, then $b \; | \; c$.
+    \item Given $a$, $b \in \mathbb{N}$, $\lcm(a, b) = \frac{ab}{\gcd(a, b)}$.
+    \item All prime numbers are odd.
+\end{itemize}
+How many of these are correct?
+\answers{0}{1}{2}{3}{4}
 
 \item % Ralph, correct answer 8585
 $k \in \mathbb{N}$ is chosen such that $k^2 + 2016k + 2015$ is a perfect square.
-Which of the following is a possible value of $k$?
+Which of the following is a valid value for $k$?
 \answers{$1544$}{$3471$}{$6190$}{$8585$}{$9381$}
 
-\item % 
+\item % Ralph, correct answer 43
+What are the last two digits of $7^{7^{7^7}}$?
+\answers{$01$}{$07$}{$49$}{$43$}{$85$}
 
 \end{enumerate}
 
