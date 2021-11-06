@@ -1,19 +1,18 @@
 \documentclass{article}
 
 \usepackage{mathtools,amsfonts}
-\usepackage{enumerate}
+\usepackage{enumitem}
 \usepackage{fullpage}
 \usepackage{fancyvrb}
+\usepackage{parskip}
 \DeclareMathOperator{\lcm}{lcm}
 
 \newcommand{\answers}[5]{
-    \newline
-    {
-        \centering
-        \begin{tabular}{p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth}}
-            A) #1 & B) #2 & C) #3 & D) #4 & E) #5
-        \end{tabular}
-    }
+  \begin{center}
+    \begin{tabular}{*{5}{p{0.15\textwidth}}}
+      A) #1 & B) #2 & C) #3 & D) #4 & E) #5
+    \end{tabular}
+  \end{center}
 }
 
 
@@ -30,7 +29,7 @@
   \textbf{\large Time: $1$ hour}
 \end{center}
 
-\vspace{24pt}
+\bigskip
 
 This test consists of four sections with five questions each.
 Each question is multiple-choice with five possible answers of which exactly one is correct.
@@ -42,28 +41,24 @@ This test will only be used to decide which stream at the camp you will gain the
 
 
 \section{Algebra}
-\begin{enumerate}[1.]
+\begin{enumerate}
 
 \item % Ralph, correct answer: \sqrt{6}
 Let $x$, $y$ and $z$ be positive real numbers that satisfy $xy = 1$, $yz = 2$, $zx = 3$.
 What the value of $xyz$? 
 \answers{$\sqrt{2}$}{$2$}{$\sqrt{6}$}{$6$}{Impossible}
 
-
 \item % Ralph, correct answer: \frac{9}{10}
 Given that $x$ satisfies $x + \frac{1}{x} = 10$, what is the value of $\frac{x^2-x+1}{x^2 +1}$?
 \answers{$\frac{1}{100}$}{$\frac{9}{10}$}{$\frac{91}{100}$}{$\frac{99}{100}$}{$1$}
 
-
 \item % Ralph, correct answer: 7
-How many roots (not necessarily unique) does the polynomial $P(x) = x^7-5x^3 + x + 1$ have?
+How many roots (not necessarily unique) does the polynomial $P(x) = x^7-5x^3 + x + 1$ have in the complex numbers?
 \answers{Unknown}{$1$}{$3$}{$5$}{$7$}
 
-
 \item % Ralph, correct answer: 2021^\frac{2022}{2021}
-Given a sequence $a_1$, $a_2$, ..., $a_{2021}$ satisfying $a_1a_2 \cdots a_{2021} = 2021$, and $a_{i} \in \mathbb{R}^+ \; \forall i \in \{1, 2, \cdots, 2021\}$, what is the minimum of $\sum_{i = 1}^{2021} a_i$?
+Given a sequence of positive real numbers $a_1$, $a_2$, ..., $a_{2021}$ satisfying $a_1a_2 \cdots a_{2021} = 2021$, what is the minimum of $\sum_{i = 1}^{2021} a_i$?
 \answers{$2021^\frac{2022}{2021}$}{$2021$}{$1$}{$2021 + \frac{1}{2021}$}{$0$}
-
 
 \item % Ralph, correct answer: 3 (-4, 0, 4)
 Consider a function $f: \mathbb{R} \rightarrow \mathbb{R}$ that satisfies $f(x + y)^2 = f(x^2) + f(y^2)$ for all $x$, $y \in \mathbb{R}$.
@@ -74,42 +69,27 @@ How many possible values are there for the expression $f(x) + f(y)$?
 
 
 
-
-
-
-
-
-
-
-
-
-
 \section{Combinatorics}
-\begin{enumerate}[1.]
+\begin{enumerate}
 
 \item % Ralph, correct answer: 2
-Let $A = \{2, 3, 5, 7\}$ and $B = \{3, 4, 5, 6 \}$, what is $|A \cap B|$?
+Let $A = \{2, 3, 5, 7\}$ and $B = \{3, 4, 5, 6 \}$; what is $|A \cap B|$?
 \answers{$0$}{$2$}{$4$}{$6$}{$8$}
 
-
 \item % Ralph, correct answer: 2^{32}
-Given a set of all of the squares on an $8 \times 8$ chessboard (each square is assumed to be unique), how many subsets do not contain any white squares?
+Given a set of all of the $1 \times 1$ squares on an $8 \times 8$ chessboard (each square is assumed to be unique), how many subsets of this set do not contain any white squares?
 \answers{$0$}{$32$}{$2^{32}$}{$32!$}{$2^{64}$}
-
 
 \item % Ralph, correct answer: \mathbb{R}
 SAMF offers Liam five payment options (A-E) for his work at the camp.
 These will all be in the form of a bag full of R1 coins.
 Each bag is labelled with a set indicating that Liam can construct a bijection between the coins in the bag and that set.
 Which bag is the biggest? 
-\answers{$\mathbb{N}$}{$\mathbb{Z}$}{$\mathbb{Q}$}{$\phi$}{$\mathbb{R}$} 
-
-
+\answers{$\mathbb{N}$}{$\mathbb{Z}$}{$\mathbb{Q}$}{$\emptyset$}{$\mathbb{R}$} 
 
 \item % Aaron, correct answer: 7 
-What is the smallest natural number, $n$, such that any set of $n$ integers will always contain two numbers whose sum or difference is a multiple of $10$?
+What is the smallest natural number $n$ such that any set of $n$ integers will always contain two numbers whose sum or difference is a multiple of $10$?
 \answers{$5$}{$6$}{$7$}{$10$}{$11$}
-
 
 \item % Aaron, correct answer: 57 
 The numbers $1$, $2$, ..., $2021$ are written on a blackboard.
@@ -122,20 +102,8 @@ Which of the following could be the number he has on the board after $2020$ minu
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 \section{Geometry}
-\begin{enumerate}[1.]
+\begin{enumerate}
 
 \item % Ralph, correct answer 90^\circ 
 Let $ABC$ and $ABD$ be two isosceles triangle with $C$, $B$, and $D$ collinear and $C \ne D$.
@@ -148,25 +116,23 @@ Let $P$ be the intersection of $AM$ and $BN$.
 What fraction of the square's area is $\triangle BPM$?
 \answers{ $\frac{1}{8}$ }{ $\frac{1}{100}$ }{ $\frac{1}{24}$ }{ $\frac{1}{10}$ }{ $\frac{1}{20}$ }
 
-
 \item % Ralph, correct answer 2
 Consider the following five statements:
 \begin{itemize}
-    \item In non-degenerate triangle $ABC$, it is guaranteed that $|AB| > |BC| + |CA|$.
-    \item The incenter, centroid, and circumcenter of a triangle are collinear.
-    \item It is possible to divide an arbitrary angle into three equal parts using only a ruler and compass.
-    \item In quadrilateral $ABCD$, it is always true that $|AB| \cdot |CD| + |AD| \cdot |BC| \ge |AC| \cdot |BD|$.
-    \item It is possible to inscribe a circle inside any non-degenerate triangle, and the center of this circle is the intersection of perpendicular bisectors of the sides of the triangle.
+  \item In non-degenerate triangle $ABC$, it is guaranteed that $|AB| > |BC| + |CA|$.
+  \item The incentre, centroid, and circumcentre of a triangle are collinear.
+  \item It is possible to divide an arbitrary angle into three equal parts using only a ruler and compass.
+  \item In quadrilateral $ABCD$, it is always true that $|AB| \cdot |CD| + |AD| \cdot |BC| \ge |AC| \cdot |BD|$.
+  \item It is possible to inscribe a circle inside any non-degenerate triangle, and the centre of this circle is the intersection of perpendicular bisectors of the sides of the triangle.
 \end{itemize}
 How many of these are correct?
 \answers{$1$}{$2$}{$3$}{$4$}{$5$}
 
 \item % Ralph, correct answer 15
-In triangle $ABC$, let $H$ be the orthocenter.
+In triangle $ABC$, let $H$ be the orthocentre.
 Let $A'$, $B'$, and $C'$ be the reflections of $H$ over lines $BC$, $CA$, and $AB$ respectively.
 How many cyclic quadrilaterals are there that use only the points $A$, $B$, $C$, $H$, $A'$, $B'$, $C'$?
 \answers{$15$}{$35$}{$0$}{$4$}{$7$}
-
 
 \item % Ralph, correct answer \frac{11}{10}
 Consider $\triangle ABC$ with $|AB| = 8$, $|BC| = 9$, and $|CA| = 6$.
@@ -178,29 +144,12 @@ If $|AE| = 2$, and $|AF| = 3$, what is $\frac{|AP|}{|PD|}$?
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \section{Number Theory}
-\begin{enumerate}[1.]
+\begin{enumerate}
 
 \item % Ralph, correct answer 119
 What is the largest positive integer that cannot be written as the sum of non-negative multiples of $11$ and $13$?
 \answers{$119$}{$93$}{$73$}{$2022$}{$128$}
-
 
 \item % Dylan, correct answer 720
 How many natural numbers below $1001$ are relatively prime to $1001$?
@@ -209,17 +158,17 @@ How many natural numbers below $1001$ are relatively prime to $1001$?
 \item % Ralph, correct answer 1
 Consider the following four statements:
 \begin{itemize}
-    \item Every number can be written as the sum of two squares.
-    \item If $a \; | \; b$ and $a \; | \; c$, then $b \; | \; c$.
-    \item Given $a$, $b \in \mathbb{N}$, $\lcm(a, b) = \frac{ab}{\gcd(a, b)}$.
-    \item All prime numbers are odd.
+  \item Every positive integer can be written as the sum of two squares.
+  \item If $a \mid b$ and $a \mid c$, then $b \mid c$.
+  \item Given $a$, $b \in \mathbb{N}$, we have that $\lcm(a, b) = \frac{ab}{\gcd(a, b)}$.
+  \item All prime numbers are odd.
 \end{itemize}
 How many of these are correct?
 \answers{0}{1}{2}{3}{4}
 
 \item % Ralph, correct answer 8585
 $k \in \mathbb{N}$ is chosen such that $k^2 + 2016k + 2015$ is a perfect square.
-Which of the following is a valid value for $k$?
+Which of the following is a possible value for $k$?
 \answers{$1544$}{$3471$}{$6190$}{$8585$}{$9381$}
 
 \item % Ralph, correct answer 43
@@ -228,7 +177,6 @@ What are the last two digits of $7^{7^{7^7}}$?
 
 \end{enumerate}
 
-\vfill
 
 
 \vfill
