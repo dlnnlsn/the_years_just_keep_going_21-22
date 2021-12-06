@@ -1,0 +1,46 @@
+\documentclass{extarticle}
+\usepackage{amsmath,amssymb,amsbsy}
+% \usepackage{arcs}
+\usepackage{fullpage}
+
+\begin{document}
+	\section*{Question} % (fold)
+		Let $ABCDE$ be a regular pentagon inscribed in a cricle. Let $X$ be a point on the minor arc $AE$. Prove that
+		\begin{flalign*}
+		 	|AX|-|BX|+|CX|-|DX|+|EX| = 0.
+		\end{flalign*}
+
+	\section*{Solution}
+		Suppose, without loss of generality that $AB=BC=CD=DE=AE=1$. Apply Ptolemy's theorem on $XABC, XACE, XCDE, XBCD$ to get
+		\begin{flalign}
+			|AX| \cdot 1 + |CX| \cdot 1 &= |BX| \cdot |AC|, \\ 
+			|AX| \cdot |CE| + |EX| \cdot |AC| &= |CX| \cdot 1, \\ 
+			|CX| \cdot 1 + |EX| \cdot 1 &= |DX| \cdot |CE|, \\
+			|BX| \cdot 1 + |DX| \cdot 1 &= |CX| \cdot |DB|
+		\end{flalign}
+
+		Combining (1), (2), (3), and (4) yeilds
+
+		\begin{flalign}
+			2 \left( |AX|+ |CX| + |EX| \right) = \left( |BX| +|DX| \right)  \left( |AC|+ \frac{1}{|AC|^2} \right) 
+		\end{flalign}
+
+		Now using Ptolemy in $ABCD$ we get
+
+		\begin{flalign*}
+		 	&&|AC|+ 1 &= |AC|^2&\\
+		 	&\therefore&\frac{1}{|AC|}+ \frac{1}{|AC|^2} &= 1&\\
+		 	&\Leftrightarrow&|AC|+ \frac{1}{|AC|^2} &=|AC| + 1-\frac{1}{|AC|}&\\
+		 	&&&=\frac{|AC|^2-1}{|AC|}+1 &\\
+		 	&&&=\frac{|AC|}{|AC|}+1 &\\
+		 	&&&=2. &
+		\end{flalign*}
+
+		Substituting back into (5) yields
+
+		\begin{flalign*}
+		 	2 \left( |AX|+ |CX| + |EX| \right) = 2\left( |BX| +|DX| \right) .
+		\end{flalign*}
+
+		Cancelling the 2 and rearranging yields the desired result.
+\end{document}
