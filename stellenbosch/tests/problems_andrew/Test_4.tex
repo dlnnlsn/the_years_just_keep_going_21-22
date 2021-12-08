@@ -1,0 +1,38 @@
+\documentclass{extarticle}
+\usepackage{amsmath,amssymb,amsbsy}
+% \usepackage{arcs}
+\usepackage{fullpage}
+
+\begin{document}
+	\section{Questions} % (fold)
+	\label{sec:questions}
+		\begin{enumerate}
+			\item Prove
+			\begin{flalign*}
+				\frac{1}{\sqrt{1+x^2}}+\frac{1}{\sqrt{1+y^2}}+\frac{1}{\sqrt{1+z^2}} \le \frac{3}{2}
+			\end{flalign*}
+			for all $x,y,z \ \in \ \mathbb{R}^+$ satisfying $x+y+z = xyz$
+			\item Let $ABCD$ be a convex quadrilateral with an inscribed circle whose center is $O$.Let $W,X$ be the feet of the perpendiculars from $A$ to $OB$ and $OD$ respectively, and let $Y,Z$ be the feet of the perpendiculars from $C$ to $OB$ and $OD$ respectively. Prove that $W,X,Y,Z$ are concyclic. 
+		\end{enumerate}
+
+	\section{Solutions} % (fold)
+	\label{sec:solutions}
+	\begin{enumerate}
+		\item Let $a=\arctan(x),b=\arctan(y),c=\arctan(z)$. Then $\tan(a)+\tan(b)+\tan(c)=\tan(a)+\tan(b)+\tan(c)$ so $a+b+c =\pi$ Furthermore $0<a,b,c < \frac{\pi}{2}$ by construction. Substituting into the orignal equation yields
+
+		\begin{flalign*}
+			\frac{1}{\sqrt{1+x^2}}+\frac{1}{\sqrt{1+y^2}}+\frac{1}{\sqrt{1+z^2}} &=\frac{1}{\sqrt{1+\tan^2(a)}}+\frac{1}{\sqrt{1+\tan^2(b)}}+\frac{1}{\sqrt{1+\tan^2(c)}}\\
+			&=\frac{1}{\sec(a)}+\frac{1}{\sec(b)}+\frac{1}{\sec(c)}\\
+			&=\cos(a)+\cos(b)+\cos(c)\\
+			&\le 3 \cdot \cos \left( \frac{a+b+c}{3} \right) \\
+			&=3 \cdot \cos \left( \frac{\pi}{3} \right) \\
+			&= \frac{3}{2}
+		\end{flalign*}
+		
+	\end{enumerate}
+	
+	
+	% section solutions (end)
+		
+	% section questions (end)
+\end{document}
