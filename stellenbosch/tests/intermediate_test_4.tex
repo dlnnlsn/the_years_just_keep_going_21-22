@@ -30,7 +30,28 @@ $$\frac{e}{b}+\frac{c}{f} = 1$$
 Prove that $abc + def = 0$
 
 
-\item %
+\item %Phil
+From points $A$ and $B$ on a circle, equal tangents $AP$ and $BQ$ are drawn, as shown. Prove that $AB$ bisects $PQ$. 
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-5,5) rectangle (-5,5);
+\draw [line width=2pt] (0,0) circle (2.8284271247461903cm);
+\draw [line width=2pt,domain=-9.62:9.62] plot(\x,{(--8-0*\x)/-2.8284271247461903});
+\draw [line width=2pt,domain=-9.62:9.62] plot(\x,{(--8-2.6581372106527787*\x)/-0.9665953493282831});
+\draw [line width=2pt] (4.3668525260863005,3.7323717681139024)-- (5.02,-2.8284271247461903);
+\draw [line width=2pt] (0,-2.8284271247461903)-- (2.6581372106527787,-0.9665953493282831);
+\begin{scriptsize}
+\draw [fill=uuuuuu] (0,-2.8284271247461903) circle (2pt);
+\draw[color=uuuuuu] (0.16,-2.43) node {$A$};
+\draw [fill=uuuuuu] (2.6581372106527787,-0.9665953493282831) circle (2pt);
+\draw[color=uuuuuu] (2.82,-0.53) node {$B$};
+\draw [fill=uuuuuu] (5.02,-2.8284271247461903) circle (2pt);
+\draw[color=uuuuuu] (5.18,-2.39) node {$P$};
+\draw [fill=uuuuuu] (4.3668525260863005,3.7323717681139024) circle (2pt);
+\draw[color=uuuuuu] (4.52,4.13) node {$Q$};
+\end{scriptsize}
+\end{tikzpicture}
 
 
 \item% Maclaurin 2019
