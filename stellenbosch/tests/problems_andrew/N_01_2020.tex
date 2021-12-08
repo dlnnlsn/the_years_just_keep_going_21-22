@@ -1,0 +1,40 @@
+\documentclass[a4paper]{extarticle}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{fullpage}
+
+\pagestyle{empty}
+\begin{document}
+	\section{Problem} % (fold)
+	\label{sec:problem}
+		Let $p$ be an odd prime. Prove
+		\begin{flalign*}
+			\sum_{k=1}^{p-1} (p-k)!k! \equiv \frac{p-1}{2} \text{ (mod p)}
+		\end{flalign*}
+		  
+	% section problem (end)
+
+	\section{Solution} % (fold)
+	\label{sec:solution}
+		We claim that $(p-k)!k!\equiv_p k(-1)^k$. In order to prove this we consider $\binom{p-1}{k}$ modulo $p$.
+		\begin{flalign*}
+		 	&&\binom{p-1}{k} &= \frac{(p-1)(p-2)\cdots (p-k)}{k(k-1)\cdots 1}&\\
+		 	&\Leftrightarrow&\frac{(p-1)!}{(p-1-k)!k!}&\equiv_p (-1)^k\frac{k!}{k!}&\\
+		 	&\Leftrightarrow&-1 &\equiv_p (-1)^k(p-1-k)!k!&\text{(by Wilson's theorem)}\\
+		 	&\Leftrightarrow&(p-k)(-1)^{k-1} &\equiv_p (p-k)(p-1-k)!k!&\\
+		 	&\Leftrightarrow&k(-1)^{k} &\equiv_p (p-k)!k!&
+		\end{flalign*}
+		We substitute this result into the original equation to obtain,
+		\begin{flalign*}
+			\sum_{k=1}^{p-1} (p-k)!k! &\equiv_p \sum_{k=1}^{p-1} k(-1)^k\\
+			&= -1+2-3+\cdots +(p - 3) - (p - 2) + (p - 1)\\
+			&= (-1)+(2-3)+\cdots + ((p - 3) -(p - 2)) + (p - 1)\\
+			&= \frac{p-1}{2}(-1) + (p - 1)\\
+			&= \frac{p-1}{2}
+		\end{flalign*}
+		as required.
+		
+		
+		
+	% section solution (end)
+\end{document}
