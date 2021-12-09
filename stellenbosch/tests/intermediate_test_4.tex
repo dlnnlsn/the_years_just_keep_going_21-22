@@ -39,22 +39,20 @@ From points $A$ and $B$ on a circle, equal tangents $AP$ and $BQ$ are drawn, as 
 \definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
 \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
-\clip(-5,5) rectangle (-5,5);
+\clip(-5,-5) rectangle (6,5);
 \draw [line width=2pt] (0,0) circle (2.8284271247461903cm);
 \draw [line width=2pt,domain=-9.62:9.62] plot(\x,{(--8-0*\x)/-2.8284271247461903});
 \draw [line width=2pt,domain=-9.62:9.62] plot(\x,{(--8-2.6581372106527787*\x)/-0.9665953493282831});
 \draw [line width=2pt] (4.3668525260863005,3.7323717681139024)-- (5.02,-2.8284271247461903);
 \draw [line width=2pt] (0,-2.8284271247461903)-- (2.6581372106527787,-0.9665953493282831);
-\begin{scriptsize}
 \draw [fill=uuuuuu] (0,-2.8284271247461903) circle (2pt);
-\draw[color=uuuuuu] (0.16,-2.43) node {$A$};
+\draw[color=uuuuuu] (0.16,-2.43) node[anchor=south] {A};
 \draw [fill=uuuuuu] (2.6581372106527787,-0.9665953493282831) circle (2pt);
-\draw[color=uuuuuu] (2.82,-0.53) node {$B$};
+\draw[color=uuuuuu] (2.82,-0.53) node[anchor=north west] {$B$};
 \draw [fill=uuuuuu] (5.02,-2.8284271247461903) circle (2pt);
-\draw[color=uuuuuu] (5.18,-2.39) node {$P$};
+\draw[color=uuuuuu] (5.18,-2.39) node[anchor=south west] {$P$};
 \draw [fill=uuuuuu] (4.3668525260863005,3.7323717681139024) circle (2pt);
-\draw[color=uuuuuu] (4.52,4.13) node {$Q$};
-\end{scriptsize}
+\draw[color=uuuuuu] (4.52,4.13) node[anchor=north west] {$Q$};
 \end{tikzpicture}
 
 
@@ -65,9 +63,14 @@ A \textit{tetromino} is a rectangle with length 4 units and breadth 1 unit. Find
 \item % Andrew
 Let $p$ be an odd prime. Prove that
 \[
-	\sum_{k=1}^{p-1} (p-k)!k! \equiv \frac{p-1}{2} \pmod{p}
+	\sum_{k=1}^{p-1} (p-k)!k! \equiv \frac{p-1}{2} \pmod{p}.
 \]
 
+\vfill
+\begin{center}
+  \textbf{Please note that there is a second page.}
+\end{center}
+\clearpage
 
 \item % 
 Phil the physicist tries to come up with some equations describing the behaviour of a bucket of salt water as it is diluted by adding pure water. He uses an $m$ kilogram bucket initially containing $s$ kgs of salt and $w$ kgs of water, before $x$ kgs of extra water is added. He uses $k$ as a positive proportionality constant. Phil realises that the following two expressions are important in his study. 
