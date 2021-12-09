@@ -29,31 +29,31 @@
 
 \item %Cayley 2021
 Let $a,b,c,d,e,f \in \mathbb{R}$ satisfy the following two equations: 
-$$\frac{d}{a}+\frac{b}{e} = 1$$
-$$\frac{e}{b}+\frac{c}{f} = 1$$
-Prove that $abc + def = 0$
+$$\frac{d}{a}+\frac{b}{e} = 1 \qquad\text{and}\qquad \frac{e}{b}+\frac{c}{f} = 1.$$
+Prove that $abc + def = 0$.
 
 
 \item %Phil
-From points $A$ and $B$ on a circle, equal tangents $AP$ and $BQ$ are drawn, as shown. Prove that $AB$ bisects $PQ$. 
+From points $A$ and $B$ on a circle, equal tangents $AP$ and $BQ$ are drawn, as shown. Prove that $AB$ bisects $PQ$.
+
 \definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
-\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
-\clip(-5,-5) rectangle (6,5);
-\draw [line width=2pt] (0,0) circle (2.8284271247461903cm);
-\draw [line width=2pt,domain=-9.62:9.62] plot(\x,{(--8-0*\x)/-2.8284271247461903});
-\draw [line width=2pt,domain=-9.62:9.62] plot(\x,{(--8-2.6581372106527787*\x)/-0.9665953493282831});
-\draw [line width=2pt] (4.3668525260863005,3.7323717681139024)-- (5.02,-2.8284271247461903);
-\draw [line width=2pt] (0,-2.8284271247461903)-- (2.6581372106527787,-0.9665953493282831);
-\draw [fill=uuuuuu] (0,-2.8284271247461903) circle (2pt);
-\draw[color=uuuuuu] (0.16,-2.43) node[anchor=south] {A};
-\draw [fill=uuuuuu] (2.6581372106527787,-0.9665953493282831) circle (2pt);
-\draw[color=uuuuuu] (2.82,-0.53) node[anchor=north west] {$B$};
-\draw [fill=uuuuuu] (5.02,-2.8284271247461903) circle (2pt);
-\draw[color=uuuuuu] (5.18,-2.39) node[anchor=south west] {$P$};
-\draw [fill=uuuuuu] (4.3668525260863005,3.7323717681139024) circle (2pt);
-\draw[color=uuuuuu] (4.52,4.13) node[anchor=north west] {$Q$};
-\end{tikzpicture}
+\definecolor{uuuuuu}{rgb}{0.2666666666666,0.2666666666666,0.2666666666666}
+\begin{center} \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.8cm,y=0.8cm]
+  \clip(-5,-5) rectangle (6,5);
+  \draw [line width=2pt] (0,0) circle (2.8284271247461903cm);
+  \draw [line width=2pt,domain=-9.62:9.62] plot(\x,{(--8-0*\x)/-2.8284271247461903});
+  \draw [line width=2pt,domain=-9.62:9.62] plot(\x,{(--8-2.6581372106527787*\x)/-0.9665953493282831});
+  \draw [line width=2pt] (4.3668525260863005,3.7323717681139024)-- (5.02,-2.8284271247461903);
+  \draw [line width=2pt] (0,-2.8284271247461903)-- (2.6581372106527787,-0.9665953493282831);
+  \draw [fill=uuuuuu] (0,-2.8284271247461903) circle (2pt);
+  \draw[color=uuuuuu] (0.16,-2.43) node[anchor=south] {A};
+  \draw [fill=uuuuuu] (2.6581372106527787,-0.9665953493282831) circle (2pt);
+  \draw[color=uuuuuu] (2.82,-0.53) node[anchor=north west] {$B$};
+  \draw [fill=uuuuuu] (5.02,-2.8284271247461903) circle (2pt);
+  \draw[color=uuuuuu] (5.18,-2.39) node[anchor=south west] {$P$};
+  \draw [fill=uuuuuu] (4.3668525260863005,3.7323717681139024) circle (2pt);
+  \draw[color=uuuuuu] (4.52,4.13) node[anchor=north west] {$Q$};
+\end{tikzpicture} \end{center}
 
 
 \item% Maclaurin 2019
@@ -72,10 +72,10 @@ Let $p$ be an odd prime. Prove that
 \end{center}
 \clearpage
 
+
 \item % 
 Phil the physicist tries to come up with some equations describing the behaviour of a bucket of salt water as it is diluted by adding pure water. He uses an $m$ kilogram bucket initially containing $s$ kgs of salt and $w$ kgs of water, before $x$ kgs of extra water is added. He uses $k$ as a positive proportionality constant. Phil realises that the following two expressions are important in his study. 
-$$\frac{ms+mw}{\frac{kms}{ms+mw}+1} + mx$$
-$$\frac{ms+mw+mx}{\frac{kms}{ms+mw+mx}+1}$$
+$$\frac{ms+mw}{\frac{kms}{ms+mw}+1} + mx \qquad\text{and}\qquad \frac{ms+mw+mx}{\frac{kms}{ms+mw+mx}+1}.$$
 Help Phil by determining which one of these expressions is always bigger than or equal to the other.
 \end{enumerate}
 
