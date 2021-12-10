@@ -1,10 +1,12 @@
 \documentclass{article}
 
-\usepackage{mathtools,amsfonts}
+\usepackage{mathtools,amsfonts,amssymb}
 \usepackage{enumitem}
 \usepackage{fullpage}
 \usepackage{fancyvrb}
 \usepackage{hyperref}
+
+\DeclareMathOperator{\lcm}{lcm}
 
 
 \begin{document}
@@ -46,14 +48,27 @@ What is the maximum number of additional unit tetrahedra one can place around $T
 (Points for this problem will be awarded according to how many tetrahedra you are able to place around $T$.)
 
 
-\item % 
+\item % JM-2015-2
+For which prime numbers $p$ do there exist infinitely many functions $f : \mathbb{N} \to \mathbb{N}$ satisfying:
+\begin{itemize}
+	\item $f(1) = p$,
+	\item $f(n) = 1$ for infinitely many $n$,
+	\item $f(2021) = 2021$, and
+	\item $f(mn) = \begin{cases}
+		\lcm\{f(m),f(n)\} & \text{if}\ p \mid mn \\
+		\gcd\{f(m),f(n)\} & \text{if}\ p \nmid mn
+	\end{cases}$.
+\end{itemize}
 
 
 \item % 
-Let $P$ be a point interior to an acute-angled triangle $ABC$. Let $D,E,F$ be the feet of the perpendiculars from $P$ to $BC,CA,AB$ respectively. Denote the perimeters of $\triangle DEF,\triangle AEF, \triangle BDF, \triangle CDE$ with $s_0,s_1,s_2,s_3$. Prove that $P$ is the circumcenter of $\triangle ABC$ if and only if
-	\begin{flalign*}
-		s_0 \le  \min\{s_1,s_2,s_3\}
-	\end{flalign*}
+Let $P$ be a point interior to an acute-angled triangle $ABC$.
+Let $D$, $E$, and $F$ be the feet of the perpendiculars from $P$ to $BC$, $CA$, and $AB$ respectively.
+Denote the perimeters of $\triangle DEF$, $\triangle AEF$, $\triangle BDF$, and $\triangle CDE$ with $s_0,s_1,s_2,s_3$.
+Prove that $P$ is the circumcentre of $\triangle ABC$ if and only if
+\begin{flalign*}
+	s_0 \le  \min\{s_1,s_2,s_3\}.
+\end{flalign*}
 
 \end{enumerate}
 
@@ -67,12 +82,12 @@ Let $P$ be a point interior to an acute-angled triangle $ABC$. Let $D,E,F$ be th
 	\item If you have multiple PDF files for a question, combine them using software such as PDFsam.
 \end{itemize}
 
-\vfill
-% ASCII art
-\centering
-\small
-\begin{BVerbatim}
-% Insert art here
-\end{BVerbatim}
+% \vfill
+% % ASCII art
+% \centering
+% \small
+% \begin{BVerbatim}
+% % Insert art here
+% \end{BVerbatim}
 
 \end{document}
