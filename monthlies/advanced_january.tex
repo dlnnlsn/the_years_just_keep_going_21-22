@@ -5,8 +5,14 @@
 \usepackage{fullpage}
 \usepackage{fancyvrb}
 \usepackage{hyperref}
+\usepackage{multicol}
 
 \DeclareMathOperator{\lcm}{lcm}
+
+\SetEnumitemKey{twocol}{
+  before = \raggedcolumns\begin{multicols}{2},
+  after = \end{multicols}
+}
 
 
 \begin{document}
@@ -23,9 +29,8 @@
 \begin{enumerate}[itemsep=\fill]
 
 \item % Jean?
-Find all functions $f : \mathbb{R} \to \mathbb{R}$ such that
-\[ f(x^{2020} +2020y) = f(x^{2021} +2021y) +f(x^{2022}) \]
-for all $x,y \in \mathbb{R}$.
+Find all functions $f : \mathbb{R} \to \mathbb{R}$ such that for all positive real numbers $x$ and $y$,
+\[ f(x^{2020} +2020y) = f(x^{2021} +2021y) +f(x^{2022}).\]
 
 
 \item % Number Theory Marathon?
@@ -50,7 +55,7 @@ What is the maximum number of additional unit tetrahedra one can place around $T
 
 \item % JM-2015-2
 For which prime numbers $p$ do there exist infinitely many functions $f : \mathbb{N} \to \mathbb{N}$ satisfying:
-\begin{itemize}
+\begin{itemize}[twocol]
 	\item $f(1) = p$,
 	\item $f(n) = 1$ for infinitely many $n$,
 	\item $f(2021) = 2021$, and
@@ -82,12 +87,23 @@ Prove that $P$ is the circumcentre of $\triangle ABC$ if and only if
 	\item If you have multiple PDF files for a question, combine them using software such as PDFsam.
 \end{itemize}
 
-% \vfill
-% % ASCII art
-% \centering
-% \small
-% \begin{BVerbatim}
-% % Insert art here
-% \end{BVerbatim}
+\vfill
+% ASCII art
+\centering
+\small
+\begin{BVerbatim}
+                   ,__
+                   |  `'.
+__           |`-._/_.:---`-.._
+\='.       _/..--'`__         `'-._
+ \- '-.--"`      ===        /   o  `',
+  )= (                 .--_ |       _.'
+ /_=.'-._             {=_-_ |   .--`-.
+/_.'    `\`'-._        '-=   \    _.'
+         )  _.-'`'-..       _..-'`
+        /_.'        `/";';`|
+                     \` .'/
+                      '--'
+\end{BVerbatim}
 
 \end{document}
