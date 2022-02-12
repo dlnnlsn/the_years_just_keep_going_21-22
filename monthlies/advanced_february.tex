@@ -6,6 +6,7 @@
 \usepackage{fancyvrb}
 \usepackage{hyperref}
 
+\newcommand*{\sptext}[1]{\ \text{#1}\ }
 
 \begin{document}
 \thispagestyle{empty}
@@ -45,7 +46,15 @@ Prove that $AH \perp BC$.
 Consider the infinite sequence that starts with the six terms $1, 0, 1, 0, 1, 0$. From the seventh term onwards, each term is the units digit of the sum of the previous six terms. Show that the six numbers $0, 1, 0, 1, 0, 1$ never appear consecutively in the sequence. (In that order.)
 
 
-\item % 
+\item % JM-2014-1
+Let $\mathbb{N}$ denote the set of positive integers. Consider the function $f: \mathbb{N} \times \mathbb{N} \to \{-1,1\}$, defined as follows: 
+\[
+  f(i,j) = \begin{cases}
+    \mspace{72mu} -1 & \sptext{if} i=1 \sptext{or} j=1 \\
+    f(i-1,j) \cdot f(i,j-1) & \sptext{if} i>1 \sptext{and} j>1.
+  \end{cases}
+\]
+Determine the largest $i \leq 2021$ such that $f(i,2021) = -1$.
 
 
 \item % 
