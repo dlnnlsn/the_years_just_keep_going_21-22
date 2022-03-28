@@ -1,7 +1,7 @@
 \documentclass{article}
 
 \usepackage{mathtools,amsfonts}
-% \usepackage{enumerate}
+\usepackage{enumitem}
 % \usepackage{fullpage}
 \usepackage{fancyvrb}
 
@@ -17,15 +17,13 @@
   \textbf{\large Time: $4\frac{1}{2}$ hours}
 \end{center}
 
-\vspace{24pt}
+\bigskip
 
-\begin{enumerate}
+\begin{enumerate}[itemsep=12pt]
 
-\item %Estonia IMO TST 2018/19 S1
+\item % Estonia IMO TST 2018/19 S1
 Find all functions $f : \mathbb{R} \to \mathbb{R}$ which for all $x$, $y \in \mathbb{R}$ satisfy
-$$f(x^{2})f(y^{2}) + |x|f(-xy^{2}) = 3|y|f(x^{2}y)$$
-
-
+\[ f(x^{2})f(y^{2}) + |x|f(-xy^{2}) = 3|y|f(x^{2}y). \]
 
 \item % G1
 Let $ABCD$ be a parallelogram such that $AC = BC$.
@@ -34,20 +32,44 @@ The circumcircle of the triangle $ACD$ meets the segment $PD$ again at $Q$, and 
 Prove that the lines $CD$, $AQ$, and $BR$ are concurrent.
 
 \item % N4
-Alice is given a rational number $r > 1$ and a line with two points $B \neq R$, where point $R$ contains a red bead and point $B$ contains a blue bead.
-Alice plays a game by herself by playing a sequence of moves.
+Kerry is given a rational number $r > 1$ and a line $\ell$ with two points $B \neq R$, where point $R$ contains a red bead and point $B$ contains a blue bead.
+Kerry plays a game by herself by playing a sequence of moves.
 In every move, she chooses a (not necessarily positive) integer $k$ and a bead to move.
-If that bead is placed at point $X$, and the other bead is at point $Y$, then Alice moves the chosen bead to point $X'$ with $\overrightarrow{YX'} = r^k \overrightarrow{YX}$.
+If that bead is placed at point $X$, and the other bead is at point $Y$, then Kerry moves the chosen bead to point $X'$ on the line $\ell$ such that length $YX' = r^k YX$ and $X'$ and $X$ lie on the same side of $Y$.
 
-Alice's goal is to move the red bead to point $B$.
-Find all rational numbers $r > 1$ such that Alice can reach her goal in at most $2021$ moves.
+Kerry's goal is to move the red bead to point $B$.
+Find all rational numbers $r > 1$ such that Kerry can reach her goal in at most $2021$ moves.
 
 \end{enumerate}
 
 \vfill
 % ASCII art
 \centering
+\scriptsize
 \begin{BVerbatim}
+                          A       ;
+                |   ,--,-/ \---,-/|  ,
+               _|\,'. /|      /|   `/|-.
+           \`.'    /|      ,            `;.
+          ,'\   A     A         A   A _ /| `.;
+        ,/  _              A       _  / _   /|  ;
+       /\  / \   ,  ,           A  /    /     `/|
+      /_| | _ \         ,     ,             ,/  \
+     // | |/ `.\  ,-      ,       ,   ,/ ,/      \/
+     / @| |@  / /'   \  \      ,              >  /|    ,--.
+    |\_/   \_/ /      |  |           ,  ,/        \  ./' __:..
+    |  __ __  |       |  | .--.  ,         >  >   |-'   /     `
+  ,/| /  '  \ |       |  |     \      ,           |    /
+ /  |<--.__,->|       |  | .    `.        >  >    /   (
+/_,' \\  ^  /  \     /  /   `.    >--            /^\   |
+      \\___/    \   /  /      \__'     \   \   \/   \  |
+       `.   |/          ,  ,                  /`\    \  )
+         \  '  |/    ,       V    \          /        `-\
+          `|/  '  V      V           \    \.'            \_
+           '`-.       V       V        \./'\
+               `|/-.      \ /   \ /,---`\         
+                /   `._____V_____V'
+                           '     '
 \end{BVerbatim}
 
 \end{document}
